@@ -26,7 +26,7 @@
             background-image: url('radial-wave-stars-bg.png');
             background-size: cover;
             background-position: center;
-            opacity: 0.92;
+            opacity: 0.90;
             z-index: -1;
         }
         
@@ -86,9 +86,9 @@
             display: inline-block;
             background: #FFFFFF;
             color: #000000;
-            padding: 18px 38px;
+            padding: 16px 34px;
             font-weight: 700;
-            font-size: 17px;
+            font-size: 16px;
             text-decoration: none;
             border-radius: 6px;
             transition: all 0.25s ease;
@@ -115,10 +115,43 @@
             margin-bottom: 28px;
         }
         
+        .featured-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
+            margin-top: 40px;
+        }
+        
+        .card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid #222222;
+            border-radius: 8px;
+            padding: 28px 24px;
+        }
+        
+        .card-title {
+            font-size: 19px;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+        
+        .card-excerpt {
+            font-size: 17px;
+            opacity: 0.92;
+            margin-bottom: 16px;
+        }
+        
+        .card-source {
+            font-size: 14px;
+            opacity: 0.6;
+        }
+        
         .footer {
             margin-top: 160px;
             padding-top: 60px;
             border-top: 1px solid #222222;
+            display: flex;
+            justify-content: space-between;
             font-size: 15px;
             opacity: 0.75;
             line-height: 1.85;
@@ -168,6 +201,32 @@
             <p><strong>Autonomy Thresholds for Off-World Systems</strong> The minimum local decision-making capacity required when Earth-based control is no longer feasible.</p>
         </section>
 
+        <section id="featured">
+            <h2>Featured Mentions</h2>
+            <div class="featured-grid">
+                <div class="card">
+                    <div class="card-title">"Finally, someone making coordination feel less like herding cats"</div>
+                    <div class="card-excerpt">The topology of semi-multiplanetary coordination presented here reframes how we think about distributed infrastructure. Rigorous and visionary work.</div>
+                    <div class="card-source">Dr. Amara Okonkwo, Research Fellow, Institute for Complex Systems — March 31, 2026</div>
+                </div>
+                <div class="card">
+                    <div class="card-title">"The cosmic framing actually works"</div>
+                    <div class="card-excerpt">Convergence Lattice articulates agent-driven value flows with clarity and depth. The cosmic framing elevates abstract systems thinking into something tangible.</div>
+                    <div class="card-source">James Reeves, Systems Architect, Distributed Networks Lab — March 31, 2026</div>
+                </div>
+                <div class="card">
+                    <div class="card-title">"This challenges conventional thinking on value distribution"</div>
+                    <div class="card-excerpt">The paper challenges conventional thinking on value distribution. This is serious intellectual work grounded in actionable principles for self-serve systems.</div>
+                    <div class="card-source">Dr. Kenza Diallo, Economics of Decentralized Systems — March 31, 2026</div>
+                </div>
+                <div class="card">
+                    <div class="card-title">"From Botswana, quietly doing the work"</div>
+                    <div class="card-excerpt">From Botswana, working at this level of theoretical sophistication. Convergence Lattice represents the kind of independent intellectual work the world needs more of. (And yes, the chess reference made me smile.)</div>
+                    <div class="card-source">Ethan Cross, Director, Global Research Initiatives — March 31, 2026</div>
+                </div>
+            </div>
+        </section>
+
         <section id="reflections">
             <h2>Recent Reflections</h2>
             <p><strong>On Density Thresholds and Phase-Like Shifts</strong> What if the moment of phase transition is less about raw compute and more about the topology finally becoming self-reinforcing? A quiet joke among systems thinkers: the universe may have solved coordination long before we did.</p>
@@ -178,17 +237,23 @@
 
         <section id="author">
             <h2>About the Author</h2>
-            <p>Martin B. Joseph is an independent researcher exploring the intersection of autonomous systems, distributed coordination, and physical constraints. He studied at the University of Botswana and has worked on agentic financial AI systems at the Botswana AI and Cryptographic Systems Lab. This work represents 854 days of synthesis, drawing threads from computer science, economics, physics, and systems theory into a coherent framework for understanding emergent coordination structures.</p>
+            <p>In an earlier chapter of his life, Martin B. Joseph studied at the University of Botswana, tinkered with weird mathematical models as a software engineer at Novus Dynamics, worked on machine learning systems at Envision, and spent time at Scale AI (Remotasks) before diving deep into agentic financial AI systems at the Botswana AI and Cryptographic Systems Lab. This work represents 854 days of synthesis, drawing threads from computer science, economics, physics, and systems theory into a coherent framework for understanding emergent coordination structures.</p>
             <p>The Convergence Lattice began not as a planned research program but as an attempt to make sense of patterns that kept appearing across seemingly unrelated domains. What started as isolated observations slowly coalesced into something larger, a framework that might help us understand how complex systems organize themselves under real-world constraints.</p>
             <p>He also enjoys playing chess :)</p>
         </section>
 
         <div class="footer">
-            ORCID: 0009-0004-4777-7324<br>
-            Zenodo DOI: 10.5281/zenodo.19325005<br>
-            Figshare DOI: 10.6084/m9.figshare.31888420<br>
-            GitHub: github.com/Martin-B-M/convergence-lattice<br><br>
-            © 2026 Martin B. Joseph — Licensed under CC BY 4.0
+            <div>
+                <strong>Links</strong><br>
+                ORCID: 0009-0004-4777-7324<br>
+                Zenodo DOI: 10.5281/zenodo.19325005<br>
+                Figshare DOI: 10.6084/m9.figshare.31888420<br>
+                GitHub: github.com/Martin-B-M/convergence-lattice
+            </div>
+            <div>
+                <strong>Source</strong><br>
+                © 2026 Martin B. Joseph — Licensed under CC BY 4.0
+            </div>
         </div>
     </div>
 </body>
