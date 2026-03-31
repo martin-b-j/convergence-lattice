@@ -13,7 +13,7 @@
             font-family: 'Inter', system-ui, sans-serif;
             background: #000000;
             color: #FFFFFF;
-            line-height: 1.7;
+            line-height: 1.75;
             overflow-x: hidden;
         }
         
@@ -26,245 +26,140 @@
             background-image: url('radial-wave-stars-bg.png');
             background-size: cover;
             background-position: center;
+            opacity: 0.90;
+            z-index: -1;
+            filter: brightness(1.06) contrast(1.08);
+        }
+        
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 260px;
+            height: 100vh;
+            background: rgba(0,0,0,0.96);
+            border-right: 1px solid #222222;
+            padding: 50px 32px;
+            z-index: 10;
+        }
+        
+        .logo {
+            font-size: 29px;
+            font-weight: 900;
+            letter-spacing: -1.2px;
+            margin-bottom: 80px;
+        }
+        
+        nav a {
+            display: block;
+            color: #FFFFFF;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            transition: color 0.25s ease;
+        }
+        
+        nav a:hover {
+            color: #CCCCCC;
+        }
+        
+        .main {
+            margin-left: 260px;
+            padding: 90px 100px;
+            max-width: 920px;
+        }
+        
+        h1 {
+            font-size: 74px;
+            font-weight: 900;
+            line-height: 1.05;
+            margin-bottom: 20px;
+        }
+        
+        .subtitle {
+            font-size: 27px;
+            font-weight: 600;
             opacity: 0.92;
-            z-index: -1;
-            filter: brightness(1.05) contrast(1.1);
-        }
-        
-        .sidebar {
-            position: fixed;
-            left: 0;
-            top: 0;
-            width: 260px;
-            height: 100vh;
-            background: #000000;
-            border-right: 1px solid #222222;
-            padding: 40px 30px;
-            z-index: 10;
-        }
-        
-        .logo {
-            font-size: 28px;
-            font-weight: 900;
-            letter-spacing: -1px;
-            margin-bottom: 70px;
-        }
-        
-        nav a {
-            display: block;
-            color: #FFFFFF;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: 600;
-            margin-bottom: 22px;
-            transition: color 0.2s ease;
-        }
-        
-        nav a:hover {
-            color: #CCCCCC;
-        }
-        
-        .main {
-            margin-left: 260px;
-            padding: 80px 90px;
-            max-width: 920px;
-        }
-        
-        h1 {
-            font-size: 72px;
-            font-weight: 900;
-            line-height: 1.05;
-            margin-bottom: 18px;
-        }
-        
-        .subtitle {
-            font-size: 26px;
-            font-weight: 600;
-            opacity: 0.95;
-            margin-bottom: 70px;
+            margin-bottom: 80px;
         }
         
         .btn {
             display: inline-block;
             background: #FFFFFF;
             color: #000000;
-            padding: 18px 36px;
+            padding: 18px 38px;
             font-weight: 700;
             font-size: 17px;
             text-decoration: none;
             border-radius: 6px;
-            transition: all 0.2s ease;
+            transition: all 0.25s ease;
         }
         
         .btn:hover {
-            transform: scale(1.04);
-            box-shadow: 0 10px 30px rgba(255,255,255,0.15);
+            transform: scale(1.05);
+            box-shadow: 0 12px 35px rgba(255,255,255,0.18);
         }
         
         section {
-            margin-bottom: 140px;
+            margin-bottom: 150px;
         }
         
         h2 {
-            font-size: 44px;
+            font-size: 46px;
             font-weight: 800;
-            margin-bottom: 40px;
+            margin-bottom: 42px;
         }
         
         p {
-            font-size: 19px;
+            font-size: 19.5px;
             max-width: 780px;
+            margin-bottom: 28px;
         }
         
         .footer {
-            margin-top: 140px;
-            padding-top: 50px;
+            margin-top: 160px;
+            padding-top: 60px;
             border-top: 1px solid #222222;
             font-size: 15px;
             opacity: 0.75;
-            line-height: 1.8;
-        }
-        <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
-        
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Inter', system-ui, sans-serif;
-            background: #000000;
-            color: #FFFFFF;
-            line-height: 1.7;
-            overflow-x: hidden;
-        }
-        
-        .background {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url('radial-wave-stars-bg.png');
-            background-size: cover;
-            background-position: center;
-            opacity: 0.88;
-            z-index: -1;
-            filter: brightness(1.08) contrast(1.12);
-        }
-        
-        .sidebar {
-            position: fixed;
-            left: 0;
-            top: 0;
-            width: 260px;
-            height: 100vh;
-            background: rgba(0,0,0,0.95);
-            border-right: 1px solid #222222;
-            padding: 40px 30px;
-            z-index: 10;
-        }
-        
-        .logo {
-            font-size: 28px;
-            font-weight: 900;
-            letter-spacing: -1px;
-            margin-bottom: 70px;
-        }
-        
-        nav a {
-            display: block;
-            color: #FFFFFF;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: 600;
-            margin-bottom: 22px;
-            transition: color 0.2s ease;
-        }
-        
-        nav a:hover {
-            color: #CCCCCC;
-        }
-        
-        .main {
-            margin-left: 260px;
-            padding: 80px 90px;
-            max-width: 920px;
-        }
-        
-        h1 {
-            font-size: 72px;
-            font-weight: 900;
-            line-height: 1.05;
-            margin-bottom: 18px;
-        }
-        
-        .subtitle {
-            font-size: 26px;
-            font-weight: 600;
-            opacity: 0.95;
-            margin-bottom: 70px;
-        }
-        
-        .btn {
-            display: inline-block;
-            background: #FFFFFF;
-            color: #000000;
-            padding: 18px 36px;
-            font-weight: 700;
-            font-size: 17px;
-            text-decoration: none;
-            border-radius: 6px;
-            transition: all 0.2s ease;
-        }
-        
-        .btn:hover {
-            transform: scale(1.04);
-            box-shadow: 0 10px 30px rgba(255,255,255,0.15);
-        }
-        
-        section {
-            margin-bottom: 140px;
-        }
-        
-        h2 {
-            font-size: 44px;
-            font-weight: 800;
-            margin-bottom: 40px;
-        }
-        
-        p {
-            font-size: 19px;
-            max-width: 780px;
-        }
-        
-        .footer {
-            margin-top: 140px;
-            padding-top: 50px;
-            border-top: 1px solid #222222;
-            font-size: 15px;
-            opacity: 0.75;
-            line-height: 1.8;
+            line-height: 1.85;
         }
     </style>
 </head>
 <body>
     <div class="background"></div>
     
-    <h1>CONVERGENCE LATTICE</h1>
+    <div class="sidebar">
+        <div class="logo">CL</div>
+        <nav>
+            <a href="#overview">Overview</a>
+            <a href="#concepts">Concepts</a>
+            <a href="#conjectures">Conjectures</a>
+            <a href="#reflections">Reflections</a>
+            <a href="#author">Author</a>
+        </nav>
+        <a href="https://zenodo.org/records/19325005/files/convergencelattice.pdf" class="btn" style="margin-top: 90px;">Download Paper (15.8 MB)</a>
+    </div>
+
+    <div class="main">
+        <h1>CONVERGENCE LATTICE</h1>
         <p class="subtitle">Agent-Driven Value Flows, Self-Serve Infrastructure, and the Topology of Semi-Multiplanetary Coordination</p>
 
         <section id="overview">
             <h2>Overview</h2>
             <p>This work presents the Convergence Lattice — a recursive, multi-scale structure that quietly emerges when autonomous agents, programmable value flows, self-serve abstraction layers, and distributed edge hardware begin to interact under the unforgiving constraints of real physics and latency.</p>
             <p>What starts as a messy tangle of overlapping systems — computational, financial, and physical substrates that barely talk to each other — slowly begins to organize itself. Density increases. Patterns repeat across scales. Coordination overhead, that eternal tax on complexity, starts to compress in surprising ways. At certain thresholds the lattice shifts phase: what once felt chaotic suddenly feels almost inevitable.</p>
-            <p>Is it possible that adding more agents and more connections doesn’t always make the system harder to run — but, under the right topology, actually makes it easier?</p>
+            <p>Is it possible that adding more agents and more connections doesn’t always make the system harder to run — but, under the right topology, actually makes it easier? The question keeps surfacing.</p>
+            <p>The framework draws from multi-agent systems, network theory, distributed computing, programmable finance, and the hard limits of energy and latency in semi-multiplanetary environments. Particular attention is paid to edge co-design, vertical compute stacks, energy reuse, and why autonomy stops being a nice-to-have and becomes a structural necessity the moment you leave low-latency Earth.</p>
         </section>
 
         <section id="concepts">
             <h2>Key Concepts</h2>
-            <p><strong>Substrate Formation</strong> — The foundational layers that enable autonomous coordination.</p>
-            <p><strong>The Recursive Lattice</strong> — A structure that repeats across scales from individual agent interactions to global coordination patterns.</p>
-            <p><strong>Programmable Value Flows</strong> — Value transfer that operates at the same speed and granularity as computation itself.</p>
-            <p><strong>Edge Co-Design & Semi-Multiplanetary Topology</strong> — Why autonomy stops being an optimization and becomes a structural necessity the moment you leave low-latency Earth.</p>
+            <p><strong>Substrate Formation</strong> — The foundational layers—computational, financial, and physical—that enable autonomous coordination. These substrates don’t emerge in isolation; they co-evolve, each constraining and enabling the others in ways that shape the overall system topology.</p>
+            <p><strong>The Recursive Lattice</strong> — A structure that repeats across scales, from individual agent interactions to global coordination patterns. Self-similar patterns emerge not from top-down design, but from the recursive application of simple rules under physical constraints.</p>
+            <p><strong>Programmable Value Flows</strong> — Value transfer that operates at the same speed and granularity as computation itself. When financial rails match computational latencies, new coordination primitives become possible—enabling agent-to-agent exchanges that would be prohibitively expensive under traditional systems.</p>
+            <p><strong>Edge Co-Design & Semi-Multiplanetary Topology</strong> — Why autonomy stops being an optimization and becomes a structural requirement the moment you leave low-latency Earth.</p>
         </section>
 
         <section id="conjectures">
@@ -274,12 +169,16 @@
 
         <section id="reflections">
             <h2>Recent Reflections</h2>
-            <p>Four thoughtful entries with mathematician-level depth (you can expand these later).</p>
+            <p>On Density Thresholds and Phase-Like Shifts — What if the moment of phase transition is less about raw compute and more about the topology finally becoming self-reinforcing?</p>
+            <p>The Compression of Coordination Overhead — The eternal tax on complexity appears to be negotiable after all.</p>
+            <p>Autonomy as a Structural Requirement — The farther you go from Earth, the less optional local decision-making becomes.</p>
+            <p>Limits of Recursive Systems — Every elegant lattice eventually meets the hard wall of energy and latency.</p>
         </section>
 
         <section id="author">
             <h2>About the Author</h2>
             <p>Martin B. Joseph is an independent researcher exploring the intersection of autonomous systems, distributed coordination, and physical constraints. This work represents 854 days of synthesis — drawing threads from computer science, economics, physics, and systems theory into a coherent framework for understanding emergent coordination structures.</p>
+            <p>The Convergence Lattice began not as a planned research program but as an attempt to make sense of patterns that kept appearing across seemingly unrelated domains. What started as isolated observations slowly coalesced into something larger — a framework that might help us understand how complex systems organize themselves under real-world constraints.</p>
         </section>
 
         <div class="footer">
