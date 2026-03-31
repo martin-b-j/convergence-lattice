@@ -124,25 +124,132 @@
             opacity: 0.75;
             line-height: 1.8;
         }
+        <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', system-ui, sans-serif;
+            background: #000000;
+            color: #FFFFFF;
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+        
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('radial-wave-stars-bg.png');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.88;
+            z-index: -1;
+            filter: brightness(1.08) contrast(1.12);
+        }
+        
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 260px;
+            height: 100vh;
+            background: rgba(0,0,0,0.95);
+            border-right: 1px solid #222222;
+            padding: 40px 30px;
+            z-index: 10;
+        }
+        
+        .logo {
+            font-size: 28px;
+            font-weight: 900;
+            letter-spacing: -1px;
+            margin-bottom: 70px;
+        }
+        
+        nav a {
+            display: block;
+            color: #FFFFFF;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 22px;
+            transition: color 0.2s ease;
+        }
+        
+        nav a:hover {
+            color: #CCCCCC;
+        }
+        
+        .main {
+            margin-left: 260px;
+            padding: 80px 90px;
+            max-width: 920px;
+        }
+        
+        h1 {
+            font-size: 72px;
+            font-weight: 900;
+            line-height: 1.05;
+            margin-bottom: 18px;
+        }
+        
+        .subtitle {
+            font-size: 26px;
+            font-weight: 600;
+            opacity: 0.95;
+            margin-bottom: 70px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #FFFFFF;
+            color: #000000;
+            padding: 18px 36px;
+            font-weight: 700;
+            font-size: 17px;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+        }
+        
+        .btn:hover {
+            transform: scale(1.04);
+            box-shadow: 0 10px 30px rgba(255,255,255,0.15);
+        }
+        
+        section {
+            margin-bottom: 140px;
+        }
+        
+        h2 {
+            font-size: 44px;
+            font-weight: 800;
+            margin-bottom: 40px;
+        }
+        
+        p {
+            font-size: 19px;
+            max-width: 780px;
+        }
+        
+        .footer {
+            margin-top: 140px;
+            padding-top: 50px;
+            border-top: 1px solid #222222;
+            font-size: 15px;
+            opacity: 0.75;
+            line-height: 1.8;
+        }
     </style>
 </head>
 <body>
     <div class="background"></div>
     
-    <div class="sidebar">
-        <div class="logo">CL</div>
-        <nav>
-            <a href="#overview">Overview</a>
-            <a href="#concepts">Concepts</a>
-            <a href="#conjectures">Conjectures</a>
-            <a href="#reflections">Reflections</a>
-            <a href="#author">Author</a>
-        </nav>
-        <a href="https://zenodo.org/records/19325005/files/convergencelattice.pdf" class="btn" style="margin-top: 80px;">Download Paper (15.8 MB)</a>
-    </div>
-
-    <div class="main">
-        <h1>CONVERGENCE LATTICE</h1>
+    <h1>CONVERGENCE LATTICE</h1>
         <p class="subtitle">Agent-Driven Value Flows, Self-Serve Infrastructure, and the Topology of Semi-Multiplanetary Coordination</p>
 
         <section id="overview">
